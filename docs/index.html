@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf8" />
+    <title>Redwood | Analytics Intelligence</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="mdx + rsc" name="generator" />
+    <link
+      href="rss.xml"
+      rel="alternate"
+      type="application/rss+xml"
+      title="mdxjs.com"
+    />
+    <link href="favicon.ico" rel="icon" sizes="any" />
+    <link href="icon.svg" rel="icon" type="image/svg+xml" />
+    <link href="index.css" rel="stylesheet" />
+    <link
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github.min.css"
+      rel="stylesheet"
+      as="style"
+      onload='this.onload=null,this.rel="stylesheet"'
+    />
+    <link
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css"
+      rel="stylesheet"
+      as="style"
+      media="(prefers-color-scheme:dark)"
+      onload='this.onload=null,this.rel="stylesheet"'
+    />
+    <noscript
+      ><link
+      href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github.min.css
+      rel=stylesheet><link
+      href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css
+      rel=stylesheet media=(prefers-color-scheme:dark)></noscript
+    >
+    <meta
+      content="Redwood is an open-source Python library that aims to simplify the process of data analysis by allowing developers to interact with their data using simple natural language commands. Built on the principles of ease-of-use and flexibility, Redwood is designed to be a versatile tool in your data analysis toolkit."
+      name="description"
+    />
+    <meta
+      content="NLP,Natural language processing, analytics intelligence"
+      name="keywords"
+    />
+    <meta content="#010409" name="theme-color" />
+    <meta content="article" property="og:type" />
+    <meta content="Redwood" property="og:site_name" />
+    <meta content="https://ailogichq.github.io/redwood/" property="og:url" />
+    <meta content="Redwood | Analytics Intelligence" property="og:title" />
+    <meta
+      content="MDX allows you to use JSX in your markdown content. You can import components, such as interactive charts or alerts, and embed them within your content. This makes writing long-form content with components a blast."
+      property="og:description"
+    />
+    <meta content="https://mdxjs.com/og.png" property="og:image" />
+    <meta content="3062" property="og:image:width" />
+    <meta content="1490" property="og:image:height" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="https://mdxjs.com/og.png" name="twitter:image" />
+    <meta content="@mdx_js" name="twitter:site" />
+    <meta content="@4lpine" name="twitter:creator" />
+    <meta content="Reading time" name="twitter:label1" />
+    <meta content="1 minute" name="twitter:data1" />
+  </head>
+  <body cz-shortcut-listen="true">
+    <div id="root">
+      <div class="page home">
+        <a
+          href="#start-of-navigation"
+          id="start-of-content"
+          class="skip-to-navigation"
+          >Skip to navigation</a
+        >
+        <main>
+          <article>
+            <div class="content body">
+              <h2 id="markdown-for-thecomponent-era">
+                <a
+                  href="#markdown-for-thecomponent-era"
+                  aria-label="Link to this section"
+                  class="anchor"
+                  ><</a
+                >Redwood 🌲<br />
+              </h2>
+              <p>
+                Redwood is an open-source Python library that aims to simplify
+                the process of data analysis by allowing developers to interact
+                with their data using simple natural language commands. Built on
+                the principles of ease-of-use and flexibility, Redwood is
+                designed to be a versatile tool in your data analysis toolkit.
+              </p>
+              <h3 id="features">Features</h3>
+              <div class="emoji-list">
+                <ul>
+                  <li>
+                    📚 <strong>Natural Language Processing (NLP)</strong>:
+                    Redwood uses NLP to interpret commands, allowing you to
+                    analyze your data using intuitive, human-readable commands.
+                  </li>
+                  <li>
+                    💾 <strong>Data Source Flexibility</strong>: Redwood can
+                    interact with a variety of data sources, making it easy to
+                    load your data no matter where it's stored.
+                  </li>
+                  <li>
+                    🧠 <strong>Intelligent Data Analysis</strong>: Based on your
+                    natural language commands, Redwood can perform complex
+                    analysis on your data using langchain based agents.
+                  </li>
+                  <li>
+                    📈 <strong>Informative Responses</strong>: Redwood generates
+                    responses that provide insights into your data, based on the
+                    performed analysis.
+                  </li>
+                  <li>
+                    📌 <strong>Syntax Mapping</strong>: Redwood allows you to
+                    define a dictionary of syntax mappings that can be used to
+                    translate syntax into sentences.
+                  </li>
+                  <li>
+                    🔥 <strong>JSON Responses</strong>: Redwood returns
+                    responses in JSON format, making them easy to consume by
+                    other programs or libraries.
+                  </li>
+                </ul>
+              </div>
+              <h3 id="get-started">Get started</h3>
+              <p>To get started with Redwood, follow these steps:</p>
+              <p>
+                1. Clone the Redwood repository into a public GitHub repository
+                or fork it from https://github.com/your_username/redwood/fork.
+                If you plan to distribute the code, keep the source code public.
+              </p>
+              <code
+                >git clone https://github.com/your_username/redwood.git
+              </code>
+              <p>2. Install the required Python libraries:</p>
+              <code>pip install -r requirements.txt </code>
+              <p>3. Import the Redwood library in your Python script:</p>
+              <code>from redwood import Redwood </code>
+              <h3 id="usage">Usage</h3>
+              <p>
+                Here's a basic example of how to use Redwood with method
+                chaining:
+              </p>
+              <code style="display: block">
+                from redwood.redwood import Redwood <br />
+                # Create an instance of the Redwood class and load data, set a
+                model, and set an agent <br />
+                redwood = Redwood().data("data.csv").model("OpenAI",
+                api_key="your-api-key").agent("CSV")<br />
+                <br />
+                # Ask a question about the data <br />
+                response = redwood.ask("how many rows are there?")<br />
+                print(response)
+              </code>
+              <p>
+                In this example, the data, model, and agent methods are chained
+                together to load data from a CSV file, create an OpenAI model
+                instance, and create a CSV agent. The ask method is then called
+                to ask a question about the data and return the response in JSON
+                format.
+                <br /><br />
+
+                You can also define a syntax map and use it to ask questions:
+              </p>
+              <h3 id="usage-with-syntax">Usage with Syntax</h3>
+              <code style="display: block">
+                # Define a syntax map <br />
+                syntax_map = { "hvd": "tell me the highest visit day" }<br />
+                # Use the syntax map to ask a question <br />
+                redwood.syntax(syntax_map) response = redwood.ask("hvd") <br />
+                print(response)
+              </code>
+              <p>
+                In this example, the syntax method is called with the syntax_map
+                dictionary to define the syntax for the Redwood instance. The
+                ask method then translates the syntax into a sentence before
+                passing it to the agent and returning the response in JSON
+                format.
+              </p>
+              <h3 id="contributing">Contributing</h3>
+              <p>
+                We welcome contributions! If you're interested in improving
+                Redwood, there are many ways to contribute: <br />
+                <br />
+                Bug Reports: If you encounter a problem, please create an issue
+                on GitHub with a detailed description of the bug. Feature
+                Requests: If you have an idea for a new feature or an
+                improvement to an existing feature, please create an issue on
+                GitHub to discuss it. Pull Requests: If you're able to
+                contribute code, documentation, or other improvements to
+                Redwood, please create a pull request on GitHub. Before
+                submitting a pull request, please make sure your changes pass
+                all tests and conform to the project's coding style.
+              </p>
+              <h3 id="license">License</h3>
+              <p>
+                Redwood is licensed under the MIT License. <br />
+                <br />
+                Contact
+                <a href="mailto:support@analyticsintelligence.com"
+                  >support@analyticsintelligence.com</a
+                >
+                If you have any questions or feedback, please feel free to
+                contact us. You can also reach us by creating an issue on the
+                GitHub project page.
+              </p>
+            </div>
+          </article>
+          <footer class="foot-site">
+            <div class="content">
+              <div
+                class="block"
+                style="display: flex; justify-content: space-between"
+              >
+                <div>
+                  <small
+                    >© Copyright 2023
+                    <a href="https://analyticsintelligence.com/"
+                      >[AI] Analytics Intelligence Inc.</a
+                    >
+                    <br />
+                    All Rights Reserved</small
+                  >
+                </div>
+                <div style="margin-left: auto; text-align: right">
+                  <small
+                    >Project on
+                    <a href="https://github.com/ailogichq/redwood"
+                      >GitHub</a
+                    ></small
+                  >
+                  <br /><small
+                    >Updates on
+                    <a href="https://twitter.com/_AnalyticsIntel"
+                      >Twitter</a
+                    ></small
+                  >
+                </div>
+              </div>
+            </div>
+          </footer>
+        </main>
+        <nav class="navigation" aria-label="Site navigation">
+          <div class="navigation-primary">
+            <a
+              href="/"
+              aria-current="page"
+              style="text-decoration: none; color: inherit"
+              ><h1>Redwood 🌲</h1></a
+            >
+          </div>
+          <ol class="navigation-secondary">
+            <li>
+              <a href="#features">Features</a>
+            </li>
+            <li>
+              <a href="#get-started">Get started</a>
+            </li>
+            <li>
+              <a href="#usage">Usage</a>
+            </li>
+            <li>
+              <a href="#contributing">Contributing</a>
+            </li>
+          </ol>
+          <ol class="navigation-tertiary">
+            <li>
+              <a href="https://github.com/ailogichq/redwood"
+                ><svg
+                  role="img"
+                  aria-label="GitHub"
+                  class="icon icon-github"
+                  viewBox="0 0 16 16"
+                  width="18"
+                  height="18"
+                >
+                  <title>GitHub</title>
+                  <path
+                    fill="currentcolor"
+                    clip-rule="evenodd"
+                    fill-rule="evenodd"
+                    d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
+                  ></path></svg
+              ></a>
+            </li>
+            <li class="navigation-show-big">
+              <a href="https://twitter.com/_AnalyticsIntel"
+                ><svg
+                  role="img"
+                  aria-label="Twitter"
+                  class="icon icon-twitter"
+                  viewBox="0 0 18 14"
+                  width="18"
+                  height="18"
+                >
+                  <title>Twitter</title>
+                  <path
+                    fill="currentcolor"
+                    d="M18 1.684l-1.687 1.684v.28c0 .307-.05.602-.123.886-.04 2.316-.777 5.387-3.816 7.81C6.404 17.115 0 12.907 0 12.907c5.063 0 5.063-1.684 5.063-1.684-1.126 0-3.376-2.243-3.376-2.243.563.56 1.689 0 1.689 0C.56 7.295.56 5.61.56 5.61c.563.561 1.689 0 1.689 0C-.563 3.368 1.124.561 1.124.561 1.687 3.368 9 4.49 9 4.49l.093-.046A6.637 6.637 0 0 1 9 3.368C9 1.353 10.636 0 12.656 0c1.112 0 2.094.506 2.765 1.286l.329-.163L17.437 0l-1.122 2.245L18 1.684z"
+                  ></path></svg
+              ></a>
+            </li>
+            <li class="navigation-show-big">
+              <a href="https://analyticsintelligence.com/"
+                ><svg
+                  role="img"
+                  aria-label="Analytics Intelligence"
+                  class="icon icon-opencollective"
+                  viewBox="0 0 40 40"
+                  width="40"
+                  height="40"
+                >
+                  <title>Analytics Intelligence</title>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M19.1459 25.5191H13.3205L12.2127 29.3625H8.67969L14.6828 10.7021H17.7616L23.7976 29.3625H20.2647L19.1459 25.5191ZM14.2187 22.4046H18.2502L16.2232 15.422L14.2187 22.4046Z"
+                    fill="currentcolor"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M29.3678 29.3625H26.0449V10.7021H29.3678V29.3625Z"
+                    fill="currentcolor"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.9533 40.7002H0V0.700195H6.66097V4.86687H3.9066V36.5335H6.66097V40.7002H1.9533Z"
+                    fill="currentcolor"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M37.9047 40.7002H40.0001V0.700195H32.4043V4.86687H36.7446V36.5335H32.4043V40.7002H37.9047Z"
+                    fill="currentcolor"
+                  /></svg
+              ></a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <script data-src="/index.nljson" id="payload"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
