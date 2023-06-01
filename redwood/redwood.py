@@ -32,6 +32,7 @@ class AgentFactory:
     
     def create_dataframe_agent(self, dataframe):
         return create_pandas_dataframe_agent(self.model_instance, dataframe, verbose=True)
+    
 
 
 class DataSource:
@@ -43,6 +44,14 @@ class DataSource:
 
     def load_database(self):
         return SQLDatabase.from_uri(self.source)
+    
+    def load_json(self):
+        # Read JSON file into a Python list
+        with open(self.source) as f:
+            data = json.load(f)
+
+        # Create a DataFrame from the JSON data
+        return pd.DataFrame(data)
 
 
 class ModelFactory:
@@ -69,18 +78,22 @@ class SyntaxMapper:
 
 class Redwood:
     def __init__(self):
-        self.dataframe = None
+        self.dataframe = []
         self.model_instance = None
         self.agent_instance = None
         self.syntax_map = {}
 
-    def data(self, source, source_type='csv'):
-        data_source = DataSource(source)
-
-        if source_type == 'csv':
-            self.dataframe = data_source.load_csv()
-        elif source_type == 'database':
-            self.database = data_source.load_database()
+    def data(self, source):
+        for i in source:
+            data_source = DataSource(i)
+            source_type = i.split('.')[-1]
+            print(source_type)
+            if source_type == 'csv':
+                self.dataframe.append(data_source.load_csv())
+            elif source_type == 'database':
+                self.database.append(data_source.load_database())
+            elif source_type == 'json':
+                self.dataframe.append(data_source.load_json())
 
         return self
 

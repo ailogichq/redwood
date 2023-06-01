@@ -161,3 +161,6 @@ cython_debug/
 
 /*.csv
 /get-pip.py
+
+/csv_metrics.csv
+/data_syntax_v1_dataset_json.json
